@@ -278,6 +278,7 @@ button {
   font-weight: 600;
   letter-spacing: 0.02em;
   white-space: nowrap;
+  color: rgba(68, 14, 14, 0.92);
 }
 
 .social-actions__camera {
