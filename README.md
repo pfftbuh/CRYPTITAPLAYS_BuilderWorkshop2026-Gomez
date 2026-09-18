@@ -411,15 +411,15 @@ Deploy `web/` first so you have a public HTTPS URL for the on-chain `website_url
 
 **Figure 4.6** — Import `.env` from your local `web/.env` file, then save.
 
-1. Confirm the keys include `VITE_SUI_NETWORK=mainnet`. Leave `VITE_PORTFOLIO_OBJECT_ID` empty until Step 8.
+1. Confirm the keys include `VITE_SUI_NETWORK=mainnet`. Insert you own dummy value in the `VITE_PORTFOLIO_OBJECT_ID` field like "0x1233".
 
 ![Vercel environment variable keys](docs/readme/16-vercel-env-keys.png)
 
-**Figure 4.7** — Confirm `VITE_SUI_NETWORK=mainnet`. Leave `VITE_PORTFOLIO_OBJECT_ID` empty until Step 8.
+**Figure 4.7** — Confirm `VITE_SUI_NETWORK=mainnet`. Insert a dummy value in `VITE_PORTFOLIO_OBJECT_ID`.
 
 > **Warning:** Do not copy dummy placeholder values from the screenshot. Import your real `web/.env` from your machine.
 
-1. After you save, click **Redeploy**.
+1. After you save, click **Redeploy**. Go to the **Environment Variables** and clear the `VITE_PORTFOLIO_OBJECT_ID` value and save. The value column of this will be "Empty" once you have successfully cleared it and it will ask you to **Redeploy again**.
 
 ![Vercel prompt to redeploy after env change](docs/readme/17-vercel-redeploy.png)
 
@@ -584,6 +584,12 @@ sui client call `
     "Cryptita Plays Workshop participant learning Sui Move." `
     "https://cryptita-plays-builder-workshop-eosin.vercel.app" `
   --gas-budget 10000000
+```
+
+If there is an error of misalignment of parameter arguments inputted while having the same number of arguments. You may try to input the command in one line without the "`" or "\" and remove line breaks.
+
+```
+sui client call --package 0xYOUR_OBJECT_ID --module builder_card --function create_builder_card --args 0xWORKSHOP_ID "Miguel Lorenzo Gomez" "Developer/Designer" "BSCS" "PH" "Game Development/Computer Vision" "2026" "Test Studio" "Cryptita Plays" "Leadership, Management, Design, Development" "September 2026" "Cryptita Plays Workshop participant learning Sui Move." "https://cryptitaplays-builder-workshop2026-gomez-1gxypelqh-pfftbuh.vercel.app/" --gas-budget
 ```
 
 1. From the call output, copy the **Created Object ID** of the new `BuilderCard`.
