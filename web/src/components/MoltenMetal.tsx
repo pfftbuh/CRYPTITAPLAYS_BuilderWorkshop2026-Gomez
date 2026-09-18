@@ -138,9 +138,9 @@ void main() {
 const ctxMap = new WeakMap<HTMLDivElement, MoltenContext>();
 
 export default function MoltenMetal({
-  color1 = '#5227FF',
-  color2 = '#FF9FFC',
-  color3 = '#FFFFFF',
+  color1 = '#1e1c29',
+  color2 = '#973a94',
+  color3 = '#140202',
   speed = 0.35,
   scale = 4,
   detail = 3,
