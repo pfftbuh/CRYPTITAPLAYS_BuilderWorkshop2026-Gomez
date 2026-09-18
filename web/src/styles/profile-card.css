@@ -5,8 +5,8 @@
   --chain-primary-rgb: 77, 162, 255;
   --blue: var(--chain-primary);
 
-  --card: #131318;
-  --card-2: #0e0e13;
+  --card: #7a7ac7;
+  --card-2: #7a7ac7;
 
   --text: #f4f4f4;
   --muted: rgba(255, 255, 255, 0.62);
