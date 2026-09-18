@@ -421,9 +421,12 @@ Deploy `web/` first so you have a public HTTPS URL for the on-chain `website_url
 
 1. After you save, click **Redeploy**. Go to the **Environment Variables** and clear the `VITE_PORTFOLIO_OBJECT_ID` value and save. The value column of this will be "Empty" once you have successfully cleared it and it will ask you to **Redeploy again**.
 
+![Vercel options three-dotted button for editing environment variable values](docs/readme/24-empty-vite-portfolio-object-id.png)
+**Figure 4.8.1** - Edit environment variable button to clear and empty the `VITE_PORTFOLIO_ID` value.
+
 ![Vercel prompt to redeploy after env change](docs/readme/17-vercel-redeploy.png)
 
-**Figure 4.8** — Redeploy prompt after saving environment variables. A rebuild is required so Vite inlines the new values.
+**Figure 4.8.2** — Redeploy prompt after saving environment variables. A rebuild is required so Vite inlines the new values.
 
 1. Open **Deployments** and wait until the latest production build on `main` shows **Ready**.
 
